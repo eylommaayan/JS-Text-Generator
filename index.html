@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Paragraph Generator</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <div class="header-box">
+        <i class="fab fa-js-square js-icon"></i>
+        <h3>JS Text Generator</h3>
+      </div>
+      <form class="lorem-form">
+        <label for="amount">Bilang ti Parapo (1-9):</label>
+        <input type="number" name="amount" id="amount" placeholder="1" min="1" max="9" />
+        <button type="submit" class="btn">Agpataud</button>
+      </form>
+      <article class="lorem-text"></article>
+    </section>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --js-yellow: #f7df1e;
+  --js-yellow-dark: #d4be10;
+  --bg-dark: #121212;
+  --card-dark: #1e1e1e;
+  --card-border: #2e2e2e;
+  --text-light: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --radius: 6px;
+  --transition: all 0.3s ease;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+}
+
+.section-center {
+  width: 90vw;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.js-icon {
+  font-size: 3.5rem;
+  color: var(--js-yellow);
+  filter: drop-shadow(0 2px 8px rgba(247, 223, 30, 0.4));
+}
+
+h3 {
+  font-family: "Fira Code", monospace;
+  font-size: 1.8rem;
+  color: var(--js-yellow);
+  letter-spacing: 1px;
+}
+
+.lorem-form {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: var(--card-dark);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--card-border);
+}
+
+label {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+input {
+  background: #111;
+  color: var(--js-yellow);
+  padding: 0.5rem 0.75rem;
+  width: 5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--card-border);
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: "Fira Code", monospace;
+  outline: none;
+  transition: var(--transition);
+}
+
+input:focus {
+  border-color: var(--js-yellow);
+}
+
+.btn {
+  background: var(--js-yellow);
+  color: #111;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 2px solid var(--js-yellow);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--js-yellow);
+}
+
+.lorem-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.result {
+  background: var(--card-dark);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--js-yellow);
+  box-shadow: var(--shadow);
+  color: var(--text-light);
+  font-size: 0.98rem;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
